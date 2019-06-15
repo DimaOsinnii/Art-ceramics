@@ -105,6 +105,76 @@
                     <a class="btn" href="#">Buy</a>
                 </div>
             </div>
+            <h2>Price list for services</h2>
+            <table class="price-list">
+                <tr>
+                    <th class="price-number">№</th>
+                    <th>Name of service</th>
+                    <th>Production time</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td class="price-number">1.</td>
+                    <td class="price-name">Hand painted vases</td>
+                    <td>3 days</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td class="price-number">2.</td>
+                    <td class="price-name">Production of stucco for a cup or a beer glass</td>
+                    <td>2 days</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td class="price-number">3.</td>
+                    <td class="price-name">Production by product layout</td>
+                    <td>10 days</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td class="price-number">4.</td>
+                    <td class="price-name">Hand painting of other goods</td>
+                    <td>2 days</td>
+                    <td>$50</td>
+                </tr>
+            </table>
+        </section>
+        <section class="feedback">
+            <h2>Any questions?</h2>
+            <p class="feedback-tip">Contact us and we will answer all your questions.</p>
+            <form class="feedback-form" action="URL" method="post">
+                <div class="feedback-form-group">
+                    <label for="full-name">Introduce yourself:</label>
+                    <input type="text" name="full-name" id="full-name">
+                </div>
+                <div class="feedback-form-group">
+                    <label for="phone">Contact number:</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="feedback-form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="checkbox-area">
+                    <label>
+                        <input type="checkbox" name="subscription">
+                        I agree to receive spam and sms on the phone
+                    </label>
+                </div>
+                <div class="feedback-form-group">
+                    <label for="topic">Subject:</label>
+                    <select name="topic" id="topic">
+                        <option value="1">Delivery terms</option>
+                        <option value="2">Complaints</option>
+                        <option value="3">Cooperation</option>
+                    </select>
+                </div>
+                <div class="feedback-form-group">
+                    <label for="message">Message text:</label>
+                    <textarea name="phone" id="message"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
         </section>
     </main>
     <footer>
