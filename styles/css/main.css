@@ -1,23 +1,202 @@
-.price-list {
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+  background-color: white;
+}
+.section-title {
+  font-weight: bolder;
+  font-size: 45px;
+  font-family: Georgia, serif;
+  line-height: 55px;
+  color: #a38b70;
+}
+header {
+  padding: 10px;
+  background-color: #363636;
+  color: #c3c3c3;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.btn {
+  color: #a38b70;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #8d745a;
+}
+.btn:active {
+  color: rgba(141, 116, 90, 0.3);
+}
+.promo {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+.promo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.features ul {
+  list-style: none;
+}
+.features ul .feature-item {
+  text-align: center;
+  border-left: 1px solid #d9d9d9;
+}
+.features ul .feature-item:first-child {
+  border-left: none;
+}
+.features ul .feature-item .feature-title {
+  font-family: Georgia,serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bolder;
+  color: #a38b70;
+}
+.someone-reference {
+  background-color: #f2f2f2;
+}
+.someone-reference .reference-title {
+  font-size: 24px;
+}
+.someone-reference .reference-source {
+  color: #666666;
+  font-style: italic;
+}
+.someone-reference .reference-source a {
+  color: #a38b70;
+}
+.someone-reference .reference-source a:hover {
+  color: #8d745a;
+}
+.someone-reference .reference-source a:active {
+  color: rgba(141, 116, 90, 0.3);
+}
+.someone-reference dd img {
+  border-radius: 5px;
+}
+.reviews .review-item {
+  border-left: 1px solid #a38b70;
+}
+.reviews .review-item .review-author {
+  font-style: italic;
+  font-weight: bolder;
+}
+.popular-and-price {
+  background-color: #f2f2f2;
+}
+.popular-and-price .catalog-item h3 {
+  font-size: 16px;
+  color: #000000;
+}
+.popular-and-price .price-list {
+  line-height: 30px;
   width: 100%;
   border-collapse: collapse;
 }
-.price-list th {
+.popular-and-price .price-list th {
+  font-size: 14px;
+  text-transform: uppercase;
   font-weight: normal;
   text-align: left;
   padding: 5px 10px;
 }
-.price-list td {
-  border: 1px solid #333333;
+.popular-and-price .price-list td {
+  border: 1px solid #d8d8d8;
   padding: 5px 10px;
 }
-.price-list .price-number {
+.popular-and-price .price-list .price-number {
   text-align: center;
 }
-.price-list .price-name {
+.popular-and-price .price-list .price-name {
   font-weight: bold;
+  color: #000000;
 }
 .feedback-form-group {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+.feedback-form-group label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.feedback-form-group input[type="text"],
+.feedback-form-group select,
+.feedback-form-group textarea {
+  font: inherit;
+  color: inherit;
+  border: 2px solid #d5d5d5;
+}
+.feedback-form-group input[type="text"]:hover,
+.feedback-form-group select:hover,
+.feedback-form-group textarea:hover {
+  border-color: #bebebe;
+}
+.feedback-form-group input[type="text"]:focus,
+.feedback-form-group select:focus,
+.feedback-form-group textarea:focus {
+  border-color: #8d745a;
+}
+.checkbox-area {
+  border: 1px solid #d5d5d5;
+}
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #363636;
+  color: #c3c3c3;
+}
+footer .footer-middle,
+footer .footer-bottom {
+  border-top: 1px solid #5e5e5e;
+}
+footer .footer-menu h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #a38b70;
+}
+footer .footer-menu ul {
+  list-style: none;
+}
+footer .footer-menu ul li a {
+  color: #c3c3c3;
+  text-decoration: none;
+}
+footer .footer-menu ul li a:hover {
+  color: #ffffff;
+}
+footer .footer-menu ul li a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+footer .footer-bottom .footer-social b {
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  color: #a38b70;
+}
+footer .footer-bottom .footer-social .social-btn {
+  color: #ffffff;
+}
+footer .footer-bottom .footer-copyright {
+  text-transform: uppercase;
+  color: #ffffff;
 }

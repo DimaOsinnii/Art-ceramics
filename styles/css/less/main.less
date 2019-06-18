@@ -1,23 +1,214 @@
-.price-list  {
-  width: 100%;
-border-collapse: collapse;
-              th {
-                font-weight: normal;
-                text-align: left;
-                padding: 5px 10px;
-              }
-              td {
-                border: 1px solid #333333;
-                padding: 5px 10px;
-              }
-              .price-number {
-                text-align: center;
-              }
-              .price-name {
-                font-weight: bold;
-              }
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+  background-color: white;
+}
+.section-title {
+  font-weight: bolder;
+  font-size: 45px;
+  font-family: Georgia, serif;
+  line-height: 55px;
+  color: #a38b70;
+}
+header {
+  padding: 10px;
+  background-color: #363636;
+  color: #c3c3c3;
+}
+nav {
+  ul {
+    list-style: none;
+    li {
+      text-transform: uppercase;
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:active {
+          color: rgba(255,255,255, 0.3);
+        }
+      }
+    }
+  }
+}
+.btn {
+  color: #a38b70;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: #8d745a;
+  }
+  &:active {
+    color: rgba(141, 116, 90, 0.3);
+  }
+}
+.promo {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  font-family: Georgia, serif;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.features ul {
+  list-style: none;
+  .feature-item {
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+    &:first-child {
+      border-left: none;
+    }
+    .feature-title {
+      font-family: Georgia,serif;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: bolder;
+      color: #a38b70;
+    }
+  }
+}
+.someone-reference {
+  background-color: #f2f2f2;
+  .reference-title {
+    font-size: 24px;
+  }
+  .reference-source {
+    color: #666666;
+    font-style: italic;
+    a {
+      color: #a38b70;
+      &:hover {
+        color: #8d745a;
+      }
+      &:active {
+        color: rgba(141, 116, 90, 0.3);
+      }
+    }
+  }
+  dd {
+    img {
+      border-radius: 5px;
+    }
+  }
+}
+.reviews {
+  .review-item {
+    border-left: 1px solid #a38b70;
+    .review-author {
+      font-style: italic;
+      font-weight: bolder;
+    }
+  }
+}
+.popular-and-price {
+  background-color: #f2f2f2;
+  .catalog-item {
+    h3 {
+      font-size: 16px;
+      color: #000000;
+    }
+  }
+  .price-list  {
+    line-height: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    th {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: left;
+      padding: 5px 10px;
+    }
+    td {
+      border: 1px solid #d8d8d8;
+      padding: 5px 10px;
+    }
+    .price-number {
+      text-align: center;
+    }
+    .price-name {
+      font-weight: bold;
+      color: #000000;
+    }
+  }
 }
 .feedback-form-group {
   padding-bottom: 10px;
   padding-top: 10px;
+  label {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+    border: 2px solid #d5d5d5;
+    &:hover {
+      border-color: #bebebe;
+    }
+    &:focus {
+      border-color: #8d745a;
+    }
+  }
+}
+.checkbox-area {
+  border: 1px solid #d5d5d5;
+}
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #363636;
+  color: #c3c3c3;
+  .footer-middle,
+  .footer-bottom {
+    border-top: 1px solid #5e5e5e;
+  }
+  .footer-menu {
+    h3 {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      font-weight: bolder;
+      color: #a38b70;
+    }
+    ul {
+      list-style: none;
+      li {
+        a {
+          color: #c3c3c3;
+          text-decoration: none;
+          &:hover {
+            color: #ffffff;
+          }
+          &:active {
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    .footer-social {
+      b {
+        font-family: "Georgia", serif;
+        font-size: 24px;
+        color:  #a38b70
+      }
+      .social-btn {
+        color: #ffffff;
+      }
+    }
+    .footer-copyright {
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
 }
