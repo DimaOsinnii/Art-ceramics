@@ -14,18 +14,42 @@ body {
   color: #a38b70;
 }
 .btn {
+  display: inline-block;
+  width: 146px;
+  word-wrap: break-word;
+  text-align: center;
+  vertical-align: top;
+  font: inherit;
+  border-radius: 2px;
+  border: 2px solid #a38b70;
+  padding: 10px;
   color: #a38b70;
   text-transform: uppercase;
   text-decoration: none;
 }
 .btn:hover {
   color: #8d745a;
+  border-color: #8d745a;
 }
 .btn:active {
   color: rgba(141, 116, 90, 0.3);
+  border-color: #8d745a;
 }
 .btn-quick-order {
   float: right;
+  margin-top: 6px;
+  border-color: white;
+  color: white;
+}
+.btn-quick-order:hover {
+  color: #404040;
+  background-color: white;
+  border-color: white;
+}
+.btn-quick-order:active {
+  color: rgba(64, 64, 64, 0.3);
+  background-color: white;
+  border-color: white;
 }
 .clearfix::after {
   content: "";
@@ -51,19 +75,27 @@ header .header-top {
 }
 header .header-top .header-logo {
   float: left;
-  width: 300px;
+  width: 330px;
   height: 100px;
 }
+header .header-top .header-logo img {
+  width: 234px;
+  height: 97px;
+}
 header .header-top nav ul {
-  margin: 0;
+  margin: 18px 0 0 0 ;
   padding: 0;
-  margin-left: 125px;
   float: left;
   width: 520px;
   list-style: none;
 }
 header .header-top nav ul li {
+  float: left;
+  margin-right: 100px;
   text-transform: uppercase;
+}
+header .header-top nav ul li:last-child {
+  margin-right: 0;
 }
 header .header-top nav ul li a {
   color: white;
@@ -96,6 +128,7 @@ main .features ul {
   padding: 0;
 }
 main .features ul .feature-item {
+  position: relative;
   width: 279px;
   padding: 90px 30px 0 30px;
   float: left;
@@ -105,27 +138,34 @@ main .features ul .feature-item {
 main .features ul .feature-item:first-child {
   border-left-color: transparent;
 }
+main .features ul .feature-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 137px;
+  width: 65px;
+  height: 65px;
+  background: url("../../img/sprite.png") no-repeat;
+}
+main .features ul .feature-item p {
+  margin: 0;
+}
 main .features ul .feature-item .feature-title {
+  margin: 0 0 20px 0;
   font-family: Georgia,serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: bolder;
   color: #a38b70;
 }
-main .features ul .feature-choice {
-  background-image: url("../../img/choice.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+main .features ul .feature-choice::before {
+  background-position: 0 0;
 }
-main .features ul .feature-quality {
-  background-image: url("../../img/quality.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+main .features ul .feature-quality::before {
+  background-position: -2px -100px;
 }
-main .features ul .feature-safety {
-  background-image: url("../../img/safety.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+main .features ul .feature-safety::before {
+  background-position: 0 -200px;
 }
 main .someone-reference {
   background-color: #f2f2f2;
