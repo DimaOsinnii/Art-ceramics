@@ -373,9 +373,10 @@ main .feedback .container .section-title {
 main .feedback .feedback-form {
   width: 630px;
   padding-right: 390px;
-  background-image: url("../../img/feed.png");
+  background-image: url("../../img/s.png");
   background-repeat: no-repeat;
-  background-position: 100% 40px;
+  background-position: 100% 32px;
+  background-size: 35% 80%;
 }
 main .feedback .feedback-form .feedback-form-group {
   margin-bottom: 15px;
