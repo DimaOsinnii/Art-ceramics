@@ -49,7 +49,7 @@
         <section class="someone-reference">
             <div class="container">
                 <h2 class="section-title">A bit of theory</h2>
-                <a href="#" title="View Directory" class="btn">Directory</a>
+                <a href="#" title="View Directory" class="btn to-full-reference">Directory</a>
                 <dl>
                     <dt>
                         <h3 class="reference-title">Term</h3>
@@ -73,7 +73,7 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="section-title">Section title</h2>
-                <a class="btn" href="#" title="View reviews">All reviews</a>
+                <a class="btn to-all-reviews" href="#" title="View reviews">All reviews</a>
                 <div class="reviews-list clearfix">
                     <blockquote class="review-item">
                         <p>Review</p>
@@ -89,28 +89,28 @@
         <section class="popular-and-price">
             <div class="container">
                 <h2 class="section-title">Popular goods</h2>
-                <a class="btn" href="#" title="View all products">Catalog</a>
+                <a class="btn to-catalog" href="#" title="View all products">Catalog</a>
                 <div class="popular-items clearfix">
                     <div class="catalog-item">
                         <img alt="doggy" src="img/revolt-1274023-unsplash.jpg" width="306" height="206">
                         <h3>Some product</h3>
-                        <b>999$</b>
-                        <a class="btn" href="#">Description</a>
-                        <a class="btn" href="#">Buy</a>
+                        <b class="catalog-item-price">999$</b>
+                        <a class="btn btn-info" href="#">Description</a>
+                        <a class="btn btn-buy" href="#">Buy</a>
                     </div>
                     <div class="catalog-item">
                         <img alt="bowl" src="img/eniko-kis-1477913-unsplash.jpg" width="306" height="206">
                         <h3>Some product</h3>
-                        <b>999$</b>
-                        <a class="btn" href="#">Description</a>
-                        <a class="btn" href="#">Buy</a>
+                        <b class="catalog-item-price">999$</b>
+                        <a class="btn btn-info" href="#">Description</a>
+                        <a class="btn btn-buy" href="#">Buy</a>
                     </div>
                     <div class="catalog-item">
                         <img alt="vases" src="img/skyla-design-1418718-unsplash.jpg" width="306" height="206">
                         <h3>Some product</h3>
-                        <b>999$</b>
-                        <a class="btn" href="#">Description</a>
-                        <a class="btn" href="#">Buy</a>
+                        <b class="catalog-item-price">999$</b>
+                        <a class="btn btn-info" href="#">Description</a>
+                        <a class="btn btn-buy" href="#">Buy</a>
                     </div>
                 </div>
                 <h2 class="section-title">Price list for services</h2>
@@ -119,31 +119,31 @@
                         <th class="price-number">№</th>
                         <th>Name of service</th>
                         <th>Production time</th>
-                        <th>Cost</th>
+                        <th >Cost</th>
                     </tr>
                     <tr>
                         <td class="price-number">1.</td>
                         <td class="price-name">Hand painted vases</td>
-                        <td>3 days</td>
-                        <td>$100</td>
+                        <td class="price-time">3 days</td>
+                        <td class="price-cost">$100</td>
                     </tr>
                     <tr>
                         <td class="price-number">2.</td>
                         <td class="price-name">Production of stucco for a cup or a beer glass</td>
-                        <td>2 days</td>
-                        <td>$50</td>
+                        <td class="price-time">2 days</td>
+                        <td class="price-cost">$50</td>
                     </tr>
                     <tr>
                         <td class="price-number">3.</td>
                         <td class="price-name">Production by product layout</td>
-                        <td>10 days</td>
-                        <td>$250</td>
+                        <td class="price-time">10 days</td>
+                        <td class="price-cost">$250</td>
                     </tr>
                     <tr>
                         <td class="price-number">4.</td>
                         <td class="price-name">Hand painting of other goods</td>
-                        <td>2 days</td>
-                        <td>$50</td>
+                        <td class="price-time">2 days</td>
+                        <td class="price-cost">$50</td>
                     </tr>
                 </table>
             </div>
@@ -157,13 +157,15 @@
                         <label for="full-name">Introduce yourself:</label>
                         <input type="text" name="full-name" id="full-name">
                     </div>
-                    <div class="feedback-form-group">
-                        <label for="phone">Contact number:</label>
-                        <input type="text" name="phone" id="phone">
-                    </div>
-                    <div class="feedback-form-group">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email">
+                    <div class="clearfix">
+                        <div class="feedback-form-group feedback-form-group-left-part">
+                            <label for="phone">Contact number:</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="feedback-form-group feedback-form-group-right-part">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
                     </div>
                     <div class="checkbox-area">
                         <label>
@@ -223,9 +225,9 @@
             <section class="footer-bottom clearfix">
                 <div class="footer-social">
                     <b>Forward to our social!</b>
-                    <a href="#" class="social-btn">Instagram</a>
-                    <a href="#" class="social-btn">Facebook</a>
-                    <a href="#" class="social-btn">Twitter</a>
+                    <a href="#" class="social-btn social-btn-in">Instagram</a>
+                    <a href="#" class="social-btn social-btn-fb">Facebook</a>
+                    <a href="#" class="social-btn social-btn-tw">Twitter</a>
                 </div>
                 <div class="footer-copyright">
                     &copy  Art Ceramics 2019

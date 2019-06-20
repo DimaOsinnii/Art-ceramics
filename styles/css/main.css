@@ -7,6 +7,7 @@ body {
   background-color: white;
 }
 .section-title {
+  margin: 0 180px 60px 0;
   font-weight: bolder;
   font-size: 45px;
   font-family: Georgia, serif;
@@ -171,33 +172,65 @@ main .someone-reference {
   background-color: #f2f2f2;
   padding: 70px 0 90px 0;
 }
-main .someone-reference .reference-title {
-  font-size: 24px;
+main .someone-reference .container {
+  position: relative;
 }
-main .someone-reference .reference-source {
-  color: #666666;
-  font-style: italic;
-}
-main .someone-reference .reference-source a {
-  color: #a38b70;
-}
-main .someone-reference .reference-source a:hover {
-  color: #8d745a;
-}
-main .someone-reference .reference-source a:active {
-  color: rgba(141, 116, 90, 0.3);
+main .someone-reference .container .to-full-reference {
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 main .someone-reference dl {
   width: 820px;
+  padding: 0;
+  margin: 0;
 }
 main .someone-reference dl dt {
   margin: 0 0 10px 0;
 }
+main .someone-reference dl dt .reference-title {
+  display: inline;
+  font-size: 24px;
+}
+main .someone-reference dl dt .reference-source {
+  color: #666666;
+  font-style: italic;
+}
+main .someone-reference dl dt .reference-source a {
+  position: relative;
+  color: #a38b70;
+}
+main .someone-reference dl dt .reference-source a:hover {
+  color: #8d745a;
+}
+main .someone-reference dl dt .reference-source a:active {
+  color: rgba(141, 116, 90, 0.3);
+}
+main .someone-reference dl dt .reference-source a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 8px;
+  height: 8px;
+  background: url(../../img/sprite.png) no-repeat -20px -494px;
+}
 main .someone-reference dl dd {
   margin: 0;
+  position: relative;
+  min-height: 100px;
+  padding-left: 130px;
 }
 main .someone-reference dl dd img {
+  position: absolute;
   border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+main .someone-reference dl dd p {
+  margin: 0;
 }
 main .someone-reference dl dd + dt {
   margin-top: 70px;
@@ -205,12 +238,23 @@ main .someone-reference dl dd + dt {
 main .reviews {
   padding: 70px 0 90px 0;
 }
+main .reviews .container {
+  position: relative;
+}
+main .reviews .container .to-all-reviews {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 main .reviews .review-item {
   width: 377px;
   margin: 0  80px 0 0;
   padding: 0 0 0 50px;
   float: left;
   border-left: 3px solid #a38b70;
+}
+main .reviews .review-item p {
+  margin: 0 0 15px 0;
 }
 main .reviews .review-item .review-author {
   font-style: italic;
@@ -220,24 +264,65 @@ main .popular-and-price {
   padding: 70px 0 90px 0;
   background-color: #f2f2f2;
 }
+main .popular-and-price .container {
+  position: relative;
+}
+main .popular-and-price .container .to-catalog {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 main .popular-and-price .popular-items {
   margin-bottom: 50px;
 }
 main .popular-and-price .catalog-item {
+  position: relative;
   float: left;
-  width: 308px;
+  width: 262px;
+  border: 1px solid #d8d8d8;
+  padding: 221px 22px 15px 22px;
   margin-right: 48px;
 }
 main .popular-and-price .catalog-item:last-child {
   margin-right: 0;
 }
 main .popular-and-price .catalog-item img {
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 306px;
+  height: 206px;
 }
 main .popular-and-price .catalog-item h3 {
+  float: left;
+  max-width: 205px;
+  margin: 0 0 20px 0;
   font-size: 16px;
   color: #000000;
+}
+main .popular-and-price .catalog-item .catalog-item-price {
+  float: right;
+  max-width: 55px;
+  margin-bottom: 20px;
+}
+main .popular-and-price .catalog-item .btn {
+  font-size: 14px;
+  width: 102px;
+  color: white;
+  background: #a38b70;
+}
+main .popular-and-price .catalog-item .btn:hover {
+  background-color: #8d745a;
+}
+main .popular-and-price .catalog-item .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+main .popular-and-price .catalog-item .btn-info {
+  float: left;
+  clear: left;
+}
+main .popular-and-price .catalog-item .btn-buy {
+  float: right;
 }
 main .popular-and-price .price-list {
   line-height: 30px;
@@ -249,21 +334,41 @@ main .popular-and-price .price-list th {
   text-transform: uppercase;
   font-weight: normal;
   text-align: left;
-  padding: 5px 10px;
+  padding: 10px 17px;
 }
 main .popular-and-price .price-list td {
   border: 1px solid #d8d8d8;
-  padding: 5px 10px;
+  padding: 10px 17px;
 }
 main .popular-and-price .price-list .price-number {
+  width: 15px;
   text-align: center;
 }
 main .popular-and-price .price-list .price-name {
+  width: 422px;
   font-weight: bold;
   color: #000000;
 }
+main .popular-and-price .price-list .price-time {
+  width: 306px;
+}
+main .popular-and-price .price-list .price-cost {
+  width: 135px;
+}
 main .feedback {
   padding: 60px 0 70px 0;
+}
+main .feedback .container {
+  position: relative;
+}
+main .feedback .container .feedback-tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 500px;
+}
+main .feedback .container .section-title {
+  max-width: 500px;
 }
 main .feedback .feedback-form {
   width: 630px;
@@ -273,16 +378,21 @@ main .feedback .feedback-form {
   background-position: 100% 40px;
 }
 main .feedback .feedback-form .feedback-form-group {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin-bottom: 15px;
 }
 main .feedback .feedback-form .feedback-form-group label {
+  display: inline-block;
+  padding: 5px 0 5px 17px;
   text-transform: uppercase;
   font-size: 12px;
 }
 main .feedback .feedback-form .feedback-form-group input[type="text"],
 main .feedback .feedback-form .feedback-form-group select,
 main .feedback .feedback-form .feedback-form-group textarea {
+  width: 100%;
+  height: 54px;
+  box-sizing: border-box;
+  padding: 9px 15px;
   font: inherit;
   color: inherit;
   border: 2px solid #d5d5d5;
@@ -297,8 +407,36 @@ main .feedback .feedback-form .feedback-form-group select:focus,
 main .feedback .feedback-form .feedback-form-group textarea:focus {
   border-color: #8d745a;
 }
+main .feedback .feedback-form .feedback-form-group-left-part {
+  float: left;
+  width: 290px;
+}
+main .feedback .feedback-form .feedback-form-group-right-part {
+  float: right;
+  width: 290px;
+}
 main .feedback .feedback-form .checkbox-area {
+  margin-bottom: 25px;
+  padding: 25px 0 25px 17px;
   border-bottom: 1px solid #d5d5d5;
+}
+main .feedback .feedback-form .checkbox-area input[type="checkbox"] {
+  margin: 0 5px 0 0;
+}
+main .feedback .feedback-form textarea {
+  display: block;
+  min-height: 120px;
+}
+main .feedback .feedback-form .btn {
+  margin-top: 40px;
+  background-color: #a38b70;
+  color: white;
+}
+main .feedback .feedback-form .btn:hover {
+  background-color: #8d745a;
+}
+main .feedback .feedback-form .btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 footer {
   padding: 45px 0 50px 0;
@@ -324,13 +462,19 @@ footer .footer-middle .footer-menu {
   margin-right: 20px;
 }
 footer .footer-middle .footer-menu h3 {
+  margin: 0 0 20px 0;
   font-family: Georgia, serif;
   font-size: 24px;
   font-weight: bolder;
   color: #a38b70;
 }
 footer .footer-middle .footer-menu ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+footer .footer-middle .footer-menu ul li {
+  margin-bottom: 15px;
 }
 footer .footer-middle .footer-menu ul li a {
   color: #c3c3c3;
@@ -348,15 +492,40 @@ footer .footer-bottom {
 }
 footer .footer-bottom .footer-social {
   float: left;
-  width: 490px;
+  width: 550px;
+  font-size: 0;
 }
 footer .footer-bottom .footer-social b {
+  margin-right: 40px;
   font-family: "Georgia", serif;
   font-size: 24px;
   color: #a38b70;
 }
 footer .footer-bottom .footer-social .social-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
   color: #ffffff;
+  background: url(../../img/sprite.png) no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .footer-bottom .footer-social .social-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+footer .footer-bottom .footer-social .social-btn:active {
+  border-color: #ffffff;
+  opacity: 0.1;
+}
+footer .footer-bottom .footer-social .social-btn-in {
+  background-position: -3px -283px;
+}
+footer .footer-bottom .footer-social .social-btn-fb {
+  background-position: -3px -350px;
+}
+footer .footer-bottom .footer-social .social-btn-tw {
+  background-position: -1px -412px;
 }
 footer .footer-bottom .footer-copyright {
   float: right;
