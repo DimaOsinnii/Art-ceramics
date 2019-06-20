@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="styles/css/normalize.css">
     <link rel="stylesheet" href="styles/css/main.css">
 </head>
@@ -90,27 +92,54 @@
             <div class="container">
                 <h2 class="section-title">Popular goods</h2>
                 <a class="btn to-catalog" href="#" title="View all products">Catalog</a>
-                <div class="popular-items clearfix">
-                    <div class="catalog-item">
-                        <img alt="doggy" src="img/revolt-1274023-unsplash.jpg" width="306" height="206">
-                        <h3>Some product</h3>
-                        <b class="catalog-item-price">999$</b>
-                        <a class="btn btn-info" href="#">Description</a>
-                        <a class="btn btn-buy" href="#">Buy</a>
+                <div class="popular-items">
+                    <div class="slider clearfix">
+                        <div class="catalog-item">
+                            <img alt="doggy" src="img/revolt-1274023-unsplash.jpg" width="306" height="206">
+                            <h3>Some product</h3>
+                            <b class="catalog-item-price">999$</b>
+                            <a class="btn btn-info" href="#">Description</a>
+                            <a class="btn btn-buy" href="#">Buy</a>
+                        </div>
+                        <div class="catalog-item">
+                            <img alt="bowl" src="img/eniko-kis-1477913-unsplash.jpg" width="306" height="206">
+                            <h3>Some product</h3>
+                            <b class="catalog-item-price">999$</b>
+                            <a class="btn btn-info" href="#">Description</a>
+                            <a class="btn btn-buy" href="#">Buy</a>
+                        </div>
+                        <div class="catalog-item">
+                            <img alt="vases" src="img/skyla-design-1418718-unsplash.jpg" width="306" height="206">
+                            <h3>Some product</h3>
+                            <b class="catalog-item-price">999$</b>
+                            <a class="btn btn-info" href="#">Description</a>
+                            <a class="btn btn-buy" href="#">Buy</a>
+                        </div>
+                        <div class="catalog-item">
+                            <img alt="vases" src="img/skyla-design-1418718-unsplash.jpg" width="306" height="206">
+                            <h3>Some product</h3>
+                            <b class="catalog-item-price">999$</b>
+                            <a class="btn btn-info" href="#">Description</a>
+                            <a class="btn btn-buy" href="#">Buy</a>
+                        </div>
+                        <div class="catalog-item">
+                            <img alt="vases" src="img/skyla-design-1418718-unsplash.jpg" width="306" height="206">
+                            <h3>Some product</h3>
+                            <b class="catalog-item-price">999$</b>
+                            <a class="btn btn-info" href="#">Description</a>
+                            <a class="btn btn-buy" href="#">Buy</a>
+                        </div>
+                        <div class="catalog-item">
+                            <img alt="vases" src="img/skyla-design-1418718-unsplash.jpg" width="306" height="206">
+                            <h3>Some product</h3>
+                            <b class="catalog-item-price">999$</b>
+                            <a class="btn btn-info" href="#">Description</a>
+                            <a class="btn btn-buy" href="#">Buy</a>
+                        </div>
                     </div>
-                    <div class="catalog-item">
-                        <img alt="bowl" src="img/eniko-kis-1477913-unsplash.jpg" width="306" height="206">
-                        <h3>Some product</h3>
-                        <b class="catalog-item-price">999$</b>
-                        <a class="btn btn-info" href="#">Description</a>
-                        <a class="btn btn-buy" href="#">Buy</a>
-                    </div>
-                    <div class="catalog-item">
-                        <img alt="vases" src="img/skyla-design-1418718-unsplash.jpg" width="306" height="206">
-                        <h3>Some product</h3>
-                        <b class="catalog-item-price">999$</b>
-                        <a class="btn btn-info" href="#">Description</a>
-                        <a class="btn btn-buy" href="#">Buy</a>
+                    <div class="arrows">
+                        <div class="prev"></div>
+                        <div class="next"></div>
                     </div>
                 </div>
                 <h2 class="section-title">Price list for services</h2>
@@ -235,5 +264,16 @@
             </section>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        });
+    </script>
 </body>
 </html>

@@ -61,6 +61,90 @@ body {
   width: 1020px;
   margin: 0 auto;
 }
+.prev {
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  transform: rotate(-135deg);
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    border-color: #8d745a;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+  }
+  &:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .8vmin 0 0;
+    border-style: solid;
+    border-color: #8d745a;
+    transform-origin: 100% 0;
+    transition:.2s ease;
+  }
+  &:hover::after {
+    transform: rotate(45deg);
+    border-color: orange;
+    height: 120%;
+  }
+  &:hover::before {
+    border-color: orange;
+    transform: scale(.8);
+  }
+}
+.next {
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  position: absolute;
+  top: 29%;
+  right: -7%;
+  transform: rotate(45deg);
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    border-color: #8d745a;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+  }
+  &:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .8vmin 0 0;
+    border-style: solid;
+    border-color: #8d745a;
+    transform-origin: 100% 0;
+    transition:.2s ease;
+  }
+  &:hover::after {
+    transform: rotate(45deg);
+    border-color: orange;
+    height: 120%;
+  }
+  &:hover::before {
+    border-color: orange;
+    transform: scale(.8);
+  }
+}
 header {
   min-height: 490px;
   padding-top: 35px;
@@ -276,54 +360,54 @@ main {
     }
     .popular-items {
       margin-bottom: 50px;
-    }
-    .catalog-item {
-      position: relative;
-      float: left;
-      width: 262px;
-      border: 1px solid #d8d8d8;
-      padding: 221px 22px 15px 22px;
-      margin-right: 48px;
-      &:last-child {
-        margin-right: 0;
-      }
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 306px;
-        height: 206px;
-      }
-      h3 {
+      .catalog-item {
+        position: relative;
         float: left;
-        max-width: 205px;
-        margin: 0 0 20px 0;
-        font-size: 16px;
-        color: #000000;
-      }
-      .catalog-item-price {
-        float:right;
-        max-width: 55px;
-        margin-bottom: 20px;
-      }
-      .btn {
-        font-size: 14px;
-        width: 102px;
-        color: white;
-        background:  #a38b70;
-        &:hover {
-          background-color: #8d745a;
+        width: 262px;
+        border: 1px solid #d8d8d8;
+        padding: 221px 22px 15px 22px;
+        margin-right: 32px;
+        &:last-child {
+          margin-right: 0;
         }
-        &:active {
-          color:  rgba(255, 255, 255, 0.3);
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 306px;
+          height: 206px;
         }
-      }
-      .btn-info {
-        float: left;
-        clear: left;
-      }
-      .btn-buy {
-        float: right;
+        h3 {
+          float: left;
+          max-width: 205px;
+          margin: 0 0 20px 0;
+          font-size: 16px;
+          color: #000000;
+        }
+        .catalog-item-price {
+          float:right;
+          max-width: 55px;
+          margin-bottom: 20px;
+        }
+        .btn {
+          font-size: 14px;
+          width: 99px;
+          color: white;
+          background:  #a38b70;
+          &:hover {
+            background-color: #8d745a;
+          }
+          &:active {
+            color:  rgba(255, 255, 255, 0.3);
+          }
+        }
+        .btn-info {
+          float: left;
+          clear: left;
+        }
+        .btn-buy {
+          float: right;
+        }
       }
     }
     .price-list  {
@@ -357,6 +441,7 @@ main {
         width: 135px;
       }
     }
+
   }
   .feedback {
     padding: 60px 0 70px 0;

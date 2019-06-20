@@ -61,6 +61,90 @@ body {
   width: 1020px;
   margin: 0 auto;
 }
+.prev {
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  transform: rotate(-135deg);
+}
+.prev::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-width: 0.8vmin 0.8vmin 0 0;
+  border-style: solid;
+  border-color: #8d745a;
+  transition: 0.2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+.prev:after {
+  content: '';
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 0.8vmin 0 0;
+  border-style: solid;
+  border-color: #8d745a;
+  transform-origin: 100% 0;
+  transition: 0.2s ease;
+}
+.prev:hover::after {
+  transform: rotate(45deg);
+  border-color: orange;
+  height: 120%;
+}
+.prev:hover::before {
+  border-color: orange;
+  transform: scale(0.8);
+}
+.next {
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  position: absolute;
+  top: 29%;
+  right: -7%;
+  transform: rotate(45deg);
+}
+.next::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-width: 0.8vmin 0.8vmin 0 0;
+  border-style: solid;
+  border-color: #8d745a;
+  transition: 0.2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+.next:after {
+  content: '';
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 0.8vmin 0 0;
+  border-style: solid;
+  border-color: #8d745a;
+  transform-origin: 100% 0;
+  transition: 0.2s ease;
+}
+.next:hover::after {
+  transform: rotate(45deg);
+  border-color: orange;
+  height: 120%;
+}
+.next:hover::before {
+  border-color: orange;
+  transform: scale(0.8);
+}
 header {
   min-height: 490px;
   padding-top: 35px;
@@ -275,53 +359,53 @@ main .popular-and-price .container .to-catalog {
 main .popular-and-price .popular-items {
   margin-bottom: 50px;
 }
-main .popular-and-price .catalog-item {
+main .popular-and-price .popular-items .catalog-item {
   position: relative;
   float: left;
   width: 262px;
   border: 1px solid #d8d8d8;
   padding: 221px 22px 15px 22px;
-  margin-right: 48px;
+  margin-right: 32px;
 }
-main .popular-and-price .catalog-item:last-child {
+main .popular-and-price .popular-items .catalog-item:last-child {
   margin-right: 0;
 }
-main .popular-and-price .catalog-item img {
+main .popular-and-price .popular-items .catalog-item img {
   position: absolute;
   top: 0;
   left: 0;
   width: 306px;
   height: 206px;
 }
-main .popular-and-price .catalog-item h3 {
+main .popular-and-price .popular-items .catalog-item h3 {
   float: left;
   max-width: 205px;
   margin: 0 0 20px 0;
   font-size: 16px;
   color: #000000;
 }
-main .popular-and-price .catalog-item .catalog-item-price {
+main .popular-and-price .popular-items .catalog-item .catalog-item-price {
   float: right;
   max-width: 55px;
   margin-bottom: 20px;
 }
-main .popular-and-price .catalog-item .btn {
+main .popular-and-price .popular-items .catalog-item .btn {
   font-size: 14px;
-  width: 102px;
+  width: 99px;
   color: white;
   background: #a38b70;
 }
-main .popular-and-price .catalog-item .btn:hover {
+main .popular-and-price .popular-items .catalog-item .btn:hover {
   background-color: #8d745a;
 }
-main .popular-and-price .catalog-item .btn:active {
+main .popular-and-price .popular-items .catalog-item .btn:active {
   color: rgba(255, 255, 255, 0.3);
 }
-main .popular-and-price .catalog-item .btn-info {
+main .popular-and-price .popular-items .catalog-item .btn-info {
   float: left;
   clear: left;
 }
-main .popular-and-price .catalog-item .btn-buy {
+main .popular-and-price .popular-items .catalog-item .btn-buy {
   float: right;
 }
 main .popular-and-price .price-list {
