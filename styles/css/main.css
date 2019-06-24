@@ -1,5 +1,10 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
-  min-width: 1280px;
+  min-width: 320px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -58,19 +63,24 @@ body {
   clear: both;
 }
 .container {
-  width: 1020px;
+  width: 1108px;
   margin: 0 auto;
 }
-.prev {
+.arrows {
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+.arrows .prev {
   width: 6vmin;
   height: 6vmin;
   box-sizing: border-box;
   position: absolute;
-  top: 30%;
-  left: -10%;
+  top: -165px;
+  left: -5.5%;
   transform: rotate(-135deg);
 }
-.prev::before {
+.arrows .prev::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -81,7 +91,7 @@ body {
   display: block;
   transform-origin: 100% 0;
 }
-.prev:after {
+.arrows .prev:after {
   content: '';
   float: left;
   position: relative;
@@ -94,25 +104,25 @@ body {
   transform-origin: 100% 0;
   transition: 0.2s ease;
 }
-.prev:hover::after {
+.arrows .prev:hover::after {
   transform: rotate(45deg);
   border-color: orange;
   height: 120%;
 }
-.prev:hover::before {
+.arrows .prev:hover::before {
   border-color: orange;
   transform: scale(0.8);
 }
-.next {
+.arrows .next {
   width: 6vmin;
   height: 6vmin;
   box-sizing: border-box;
   position: absolute;
-  top: 30%;
-  right: -7%;
+  top: -175px;
+  right: -5.5%;
   transform: rotate(45deg);
 }
-.next::before {
+.arrows .next::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -123,7 +133,7 @@ body {
   display: block;
   transform-origin: 100% 0;
 }
-.next:after {
+.arrows .next:after {
   content: '';
   float: left;
   position: relative;
@@ -136,12 +146,12 @@ body {
   transform-origin: 100% 0;
   transition: 0.2s ease;
 }
-.next:hover::after {
+.arrows .next:hover::after {
   transform: rotate(45deg);
   border-color: orange;
   height: 120%;
 }
-.next:hover::before {
+.arrows .next:hover::before {
   border-color: orange;
   transform: scale(0.8);
 }
@@ -211,6 +221,7 @@ main .features ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 122px;
 }
 main .features ul .feature-item {
   position: relative;
@@ -227,7 +238,7 @@ main .features ul .feature-item::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 137px;
+  left: 105px;
   width: 65px;
   height: 65px;
   background: url("../../img/sprite.png") no-repeat;
@@ -365,13 +376,14 @@ main .popular-and-price .popular-items .catalog-item {
   width: 262px;
   border: 1px solid #d8d8d8;
   padding: 221px 22px 15px 22px;
-  margin-right: 37px;
+  margin-right: 33px;
+  margin-left: 33px;
 }
 main .popular-and-price .popular-items .catalog-item img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 302px;
+  width: 303px;
   height: 206px;
 }
 main .popular-and-price .popular-items .catalog-item h3 {
@@ -388,7 +400,7 @@ main .popular-and-price .popular-items .catalog-item .catalog-item-price {
 }
 main .popular-and-price .popular-items .catalog-item .btn {
   font-size: 14px;
-  width: 99px;
+  width: 120px;
   color: white;
   background: #a38b70;
 }
@@ -614,4 +626,25 @@ footer .footer-bottom .footer-copyright {
   width: 236px;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media (max-width: 1025px) {
+  .container {
+    width: 837px;
+  }
+  header .header-top .header-logo {
+    width: 260px;
+  }
+  header .header-top ul.clearfix {
+    width: 400px;
+  }
+  main .popular-and-price .popular-items .catalog-item {
+    padding: 273px 20px 20px 20px;
+  }
+  main .popular-and-price .popular-items .catalog-item .btn {
+    width: 120px;
+  }
+  main .popular-and-price .popular-items .catalog-item img {
+    width: 352px;
+    height: 256px;
+  }
 }
