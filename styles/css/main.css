@@ -1,5 +1,5 @@
 body {
-  min-width: 1040px;
+  min-width: 1280px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -108,7 +108,7 @@ body {
   height: 6vmin;
   box-sizing: border-box;
   position: absolute;
-  top: 29%;
+  top: 30%;
   right: -7%;
   transform: rotate(45deg);
 }
@@ -365,16 +365,13 @@ main .popular-and-price .popular-items .catalog-item {
   width: 262px;
   border: 1px solid #d8d8d8;
   padding: 221px 22px 15px 22px;
-  margin-right: 32px;
-}
-main .popular-and-price .popular-items .catalog-item:last-child {
-  margin-right: 0;
+  margin-right: 37px;
 }
 main .popular-and-price .popular-items .catalog-item img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 306px;
+  width: 302px;
   height: 206px;
 }
 main .popular-and-price .popular-items .catalog-item h3 {
