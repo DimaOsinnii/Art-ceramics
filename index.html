@@ -16,6 +16,19 @@
                 <div class="header-logo">
                     <img src="img/Logo1.png"  alt="Vases logo">
                 </div>
+                <div class="burger-menu">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu">MENU</label>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                    <nav class="menu">
+                        <a href="#">Shop</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Reviews</a>
+                    </nav>
+                </div>
                 <nav>
                     <ul class="clearfix">
                         <li><a href="#">Shop</a></li>
@@ -282,6 +295,13 @@
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 975,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                     }
                 }
 
