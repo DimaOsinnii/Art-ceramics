@@ -13,6 +13,7 @@ body {
 }
 .burger-menu {
   display: none;
+  background-color: transparent;
 }
 .section-title {
   margin: 0 180px 60px 0;
@@ -726,7 +727,7 @@ footer .footer-bottom .footer-copyright {
     display: block;
     margin: 6px auto 0 100px;
     width: 200px;
-    background-color: #000;
+    background-color: transparent;
     position: relative;
     color: white;
     text-align: center;
@@ -952,5 +953,53 @@ footer .footer-bottom .footer-copyright {
 @media (max-width: 380px) {
   .container {
     width: 300px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  header .header-top .header-logo {
+    width: 150px;
+  }
+  header .header-top .header-logo img {
+    width: 150px;
+    height: 70px;
+  }
+  header .burger-menu {
+    width: 125px;
+    text-align: left;
+  }
+  header .burger-menu label {
+    margin-left: 10px;
+  }
+  header .promo {
+    font-size: 20px;
+  }
+  main .features ul {
+    padding: 0;
+  }
+  main .popular-and-price .popular-items {
+    padding: 0px 20px;
+  }
+  main .popular-and-price .popular-items .catalog-item {
+    padding: 210px 10px 10px 10px;
+  }
+  main .popular-and-price .popular-items .catalog-item img {
+    width: 260px;
+    height: 195px;
+  }
+  main .popular-and-price .popular-items .catalog-item .btn {
+    width: 110px;
+    font-size: 12px;
+  }
+  main .popular-and-price .price-list {
+    line-height: 25px;
+    font-size: 10px;
+  }
+  main .popular-and-price .price-list th {
+    font-size: 10px;
+    padding: 0;
+  }
+  main .popular-and-price .price-list td {
+    padding: 2px 8px;
   }
 }

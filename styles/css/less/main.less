@@ -13,6 +13,7 @@ body {
 }
 .burger-menu {
   display: none;
+  background-color: transparent;
 }
 .section-title {
   margin: 0 180px 60px 0;
@@ -746,7 +747,7 @@ footer {
     display: block;
     margin: 6px auto 0 100px;
     width: 200px;
-    background-color: #000;
+    background-color: transparent;
     position: relative;
     color: white;
     text-align: center;
@@ -999,5 +1000,61 @@ footer {
 @media (max-width: 380px) {
   .container {
     width: 300px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  header {
+    .header-top {
+      .header-logo {
+        width: 150px;
+        img {
+          width: 150px;
+          height: 70px;
+        }
+      }
+    }
+    .burger-menu {
+      width: 125px;
+      text-align: left;
+      label {
+        margin-left: 10px;
+      }
+    }
+    .promo {
+      font-size: 20px;
+    }
+  }
+  main {
+    .features ul {
+      padding: 0;
+    }
+    .popular-and-price {
+      .popular-items {
+        padding: 0px 20px;
+        .catalog-item {
+          padding: 210px 10px 10px 10px;
+          img {
+            width: 260px;
+            height: 195px;
+          }
+          .btn {
+            width: 110px;
+            font-size: 12px;
+          }
+        }
+      }
+      .price-list {
+        line-height: 25px;
+        font-size: 10px;
+        th {
+          font-size: 10px;
+          padding: 0;
+        }
+        td {
+          padding: 2px 8px;
+        }
+      }
+    }
   }
 }
