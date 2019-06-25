@@ -464,12 +464,11 @@ main .feedback .container .section-title {
   max-width: 500px;
 }
 main .feedback .feedback-form {
-  width: 630px;
-  padding-right: 390px;
-  background-image: url("../../img/s.png");
+  padding-right: 450px;
+  background-image: url(../../img/s.png);
   background-repeat: no-repeat;
-  background-position: 100% 32px;
-  background-size: 35% 80%;
+  background-position: 100% 34px;
+  background-size: 38% 79%;
 }
 main .feedback .feedback-form .feedback-form-group {
   margin-bottom: 15px;
@@ -627,6 +626,23 @@ footer .footer-bottom .footer-copyright {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media (max-width: 1262px) {
+  .container {
+    width: 900px;
+  }
+  main .popular-and-price .popular-items .catalog-item {
+    padding: 191px 9px 15px 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  main .popular-and-price .popular-items .catalog-item img {
+    width: 268px;
+    height: 181px;
+  }
+  main .features ul {
+    padding-left: 62px;
+  }
+}
 @media (max-width: 1025px) {
   .container {
     width: 837px;
@@ -639,6 +655,8 @@ footer .footer-bottom .footer-copyright {
   }
   main .popular-and-price .popular-items .catalog-item {
     padding: 273px 20px 20px 20px;
+    margin-right: 33px;
+    margin-left: 33px;
   }
   main .popular-and-price .popular-items .catalog-item .btn {
     width: 120px;
