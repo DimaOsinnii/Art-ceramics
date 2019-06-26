@@ -348,7 +348,7 @@ main {
       }
     }
     .review-item {
-      width: 377px;
+      width: 300px;
       margin: 0  80px 0 0;
       padding: 0 0 0 50px;
       float: left;
@@ -909,7 +909,7 @@ footer {
       }
     }
     .popular-items + .section-title {
-      margin-right: 78px;
+      margin-right: 0;
     }
     .price-list .price-time,
     .price-cost{
@@ -998,11 +998,25 @@ footer {
   }
 }
 @media (max-width: 380px) {
+  .arrows {
+    .prev {
+      left: -9%;
+      top: -157px;
+    }
+    .next {
+      right: -9%;
+      top: -157px;
+    }
+  }
+  .btn {
+    width: 100px;
+    font-size: 11px;
+  }
   .container {
     width: 300px;
   }
   .section-title {
-    font-size: 25px;
+    font-size: 30px;
   }
   header {
     .header-top {
@@ -1047,13 +1061,44 @@ footer {
       .price-list {
         line-height: 25px;
         font-size: 10px;
+        tr {
+          line-height: 15px;
+        }
         th {
           font-size: 10px;
           padding: 0;
         }
         td {
-          padding: 2px 8px;
+          padding: 15px 13px;
         }
+      }
+    }
+  }
+  footer {
+    .footer-top .footer-logo {
+      width: 150px;
+      img {
+        width: 150px;
+        height: 70px;
+      }
+    }
+    .footer-middle {
+      .footer-menu {
+        margin-right: 0;
+      }
+    }
+    .footer-bottom {
+      padding-top: 25px;
+      .footer-social {
+        padding-bottom: 25px;
+        float: none;
+        margin: 0 auto;
+        width: 210px;
+      }
+      .footer-copyright {
+        width: 177px;
+        float: none;
+        margin: 0 auto;
       }
     }
   }
